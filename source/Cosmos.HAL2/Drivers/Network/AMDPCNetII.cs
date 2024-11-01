@@ -149,6 +149,7 @@ namespace Cosmos.HAL.Drivers.Network
             }
 
             StatusRegister = cur_status;
+            Core.Global.PIC.EoiSlave();
         }
 
         /// <summary>
